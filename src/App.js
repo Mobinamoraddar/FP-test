@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from "react-router-dom";
+import { createGlobalStyle } from "styled-components";
+import MovieDetail from "./components/MovieDetail";
+import Movies from "./components/Movies";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <GlobalStyle />
+      <Routes>
+        <Route path="/" element={<Movies />} />
+        <Route path="/detail/:id" element={<MovieDetail />} />
+      </Routes>
+    </>
   );
 }
 
+const GlobalStyle = createGlobalStyle`
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+   width: 100vw;
+   overflow-x: hidden;
+   font-size: 16px;
+   font-family: 'Roboto', sans-serif;
+   font-weight: 400;
+   
+     }`;
 export default App;
