@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/FP-test/static/css/main.75c4fed9.css",
+    "main.js": "/FP-test/static/js/main.12b3e2fc.js",
+    "index.html": "/FP-test/index.html",
+    "main.75c4fed9.css.map": "/FP-test/static/css/main.75c4fed9.css.map",
+    "main.12b3e2fc.js.map": "/FP-test/static/js/main.12b3e2fc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.75c4fed9.css",
+    "static/js/main.12b3e2fc.js"
+  ]
+}
